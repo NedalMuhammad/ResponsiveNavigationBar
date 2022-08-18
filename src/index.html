@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>TailwindNav</title>
+  <meta name="description" content="Basic HTMLTailwind" />
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    #menu-toggle:checked+#menu {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="h-screen">
+    <div class="container flex mx-auto px-4 py-2 pt-4 md:px-8  justify-between flex-wrap">
+      <div class="md:pl-5 lg:pl-8">
+        <a href="#" class="text-2xl py-2">
+          <i class="fa fa-diamond text-2xl mx-2" aria-hidden="true"></i>
+          <span class="font-bold">Marvel</span>
+        </a>
+      </div>
+      <label for="menu-toggle" class="block md:hidden cursor-pointer mr-2 self-center">
+        <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+          viewBox="0 0 20 20">
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+      <div class="hidden w-full text-center md:flex md:flex-grow md:w-auto" id="menu">
+        <ul class="pt-5  md:pt-0 md:flex md:flex-grow md:justify-center">
+          <li class="py-2 mx-4"><a href="#">About</a></li>
+          <li class="py-2 mx-4"><a href="#">Projects</a></li>
+          <li class="py-2 mx-4"><a href="#">Resume</a></li>
+          <li class="py-2 mx-4"><a href="#">Contacts</a></li>
+        </ul>
+        <div class="mt-2 md:pr-5 lg:pr-8">
+          <i class="fa fa-moon-o mx-1" aria-hidden="true"></i>
+          <span>Color Mode</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+</body>
+
+</html>
