@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'daily-dev-tips': "#F89283"
+        'daily-dev-tips': "#F89283",
+        'text-color': '#5b5b5b',
+        'gray': '#EEEEEE',
+        'secondarycolor': '#47465A'
       },
       fontFamily: {
         'press-start': ['"Press Start 2P"', 'sans', 'cursive'],
